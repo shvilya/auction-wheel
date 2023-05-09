@@ -19,6 +19,7 @@ const resources = {
 
 const i18next = i18n.use(LanguageDetector).use(initReactI18next).init({
   resources,
+  supportedLngs: Object.values(Language),
 });
 
 export default i18next;
