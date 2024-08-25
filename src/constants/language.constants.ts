@@ -7,6 +7,7 @@ export interface LanguageData {
 }
 
 export const SupportedLanguages: LanguageData[] = [
+  { key: Language.UA, name: 'Українська' },
   { key: Language.EN, name: 'English' },
   { key: Language.RU, name: 'Русский' },
   { key: Language.BE, name: 'Беларуская' },

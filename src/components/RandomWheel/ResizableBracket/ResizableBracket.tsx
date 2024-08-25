@@ -62,9 +62,9 @@ const ResizableBracket: FC<ResizableBracket> = ({ currentGame, ...props }) => {
             onClick={scrollToCurrentGame}
             className="current-game-button"
           >
-            Перейти к текущей игре
+            Перейти до поточної гри
           </Button>
-          <Typography className="hint">можно перемещать и масштабировать</Typography>
+          <Typography className="hint">можна переміщати та масштабувати</Typography>
         </div>
         <MapInteractionCSS value={{ scale, translation }} onChange={handleMapChange}>
           <SlotsBracket {...props} currentGame={currentGame?.id || ''} />

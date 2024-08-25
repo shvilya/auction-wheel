@@ -84,7 +84,7 @@ const TwitchEmotesList: FC<TwitchEmotesListProps> = ({ setActiveEmote, onEmotesL
       ) : (
         <CircularProgress className="emotes-loading" />
       )}
-      {!userId && <div className="emote-hint">Подключите Twitch, чтобы выбрать больше изображений в колесе</div>}
+      {!userId && <div className="emote-hint">Підключіть Twitch, щоб обрати більше зображень в колесі</div>}
     </div>
   );
 };

@@ -44,34 +44,34 @@ const PurchaseHistory: React.FC = () => {
 
   const columns: ColDef[] = [
     {
-      headerName: 'Время',
+      headerName: 'Час',
       field: 'timestamp',
       sortable: true,
       valueGetter: getTime,
       width: 110,
     },
     {
-      headerName: 'Пользователь',
+      headerName: 'Користувач',
       field: 'username',
       sortable: true,
       filterable: true,
       flex: 0.6,
     },
     {
-      headerName: 'Сообщение',
+      headerName: 'Повідомлення',
       field: 'message',
       filterable: true,
       flex: 1,
     },
     {
-      headerName: 'Стоимость',
+      headerName: 'Вартість',
       field: 'cost',
       sortable: true,
       filterable: true,
       width: 140,
     },
     {
-      headerName: 'Добавлен к',
+      headerName: 'Додан до',
       field: 'target',
       sortable: true,
       filterable: true,
@@ -96,7 +96,7 @@ const PurchaseHistory: React.FC = () => {
   return (
     <div className="history-table">
       <Button variant="outlined" color="primary" onClick={handleRefund}>
-        Вернуть выбранные награды
+        Повернути обрані нагороди
       </Button>
       <XGrid
         checkboxSelection

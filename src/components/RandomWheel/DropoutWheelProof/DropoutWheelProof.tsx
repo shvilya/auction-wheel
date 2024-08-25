@@ -26,46 +26,46 @@ enum SlotsPresetType {
 }
 
 const SLOT_PRESETS_OPTIONS: Option[] = [
-  { key: SlotsPresetType.Current, value: 'текущие лоты' },
-  { key: SlotsPresetType.Random, value: 'рандомные лоты' },
+  { key: SlotsPresetType.Current, value: 'поточні лоти' },
+  { key: SlotsPresetType.Random, value: 'рандомні лоти' },
 ];
 
 const columns: ColDef[] = [
   {
-    headerName: 'Название',
+    headerName: 'Назва',
     field: 'name',
     sortable: true,
     flex: 0.8,
   },
   {
-    headerName: 'Сумма',
+    headerName: 'Сума',
     field: 'amount',
     sortable: true,
     flex: 0.4,
   },
   {
-    headerName: 'Обычное колесо',
+    headerName: 'Звичайне колесо',
     field: 'originalChance',
     sortable: true,
     valueFormatter: percentsFormatter,
     flex: 0.4,
   },
   {
-    headerName: 'Выбывание',
+    headerName: 'Вибування',
     field: 'dropoutChance',
     sortable: true,
     valueFormatter: percentsFormatter,
     flex: 0.4,
   },
   {
-    headerName: 'Разница в шансах',
+    headerName: 'Різниця в шансах',
     field: 'chanceDifference',
     sortable: true,
     valueFormatter: percentsFormatter,
     flex: 0.4,
   },
   {
-    headerName: 'Победы',
+    headerName: 'Перемоги',
     field: 'winsCount',
     sortable: true,
     flex: 0.4,
@@ -101,21 +101,18 @@ const DropoutWheelProof: FC = () => {
 
   return (
     <div className="dropout-wheel-proof">
-      <h2>Шансы на победу</h2>
+      <h2>Шанси на перемогу</h2>
       <p className="warning important">
-        Данное колесо ПОЛНОСТЬЮ соответствует обычному классическому колесу. Чем больше сумма лота, тем меньше шанса
-        вылететь и тем больше шансов победить. Шансы на победу в этом колесе РАВНЫ шансам на победу в обычном.
+        Дане колесо ПОВНІСТТІ відповідає звичайному класичному колесу. Чим більша сума лота, тим менше шансів вилетіти і
+        тим більше шансів перемогти. Шанси на перемогу в цьому колесі РІВНІ шансам на перемогу у звичайному.
       </p>
-      <p>
-        МАТЕМАТИЧЕСКОЕ доказательство, что здесь нет никакого наеба, приведенно ниже (спасибо чаттерсу Dyaka за помощь в
-        доказательстве):
-      </p>
+      {/* <p>МАТЕМАТИЧЕСКОЕ доказательство, что здесь нет никакого наеба, приведенно ниже:</p>
       <Button size="large" variant="outlined" className="dropout-wheel-proof-pdf-button">
         <a target="_blank" href={DropoutProof} rel="noreferrer">
           Открыть математическое доказательство
         </a>
-      </Button>
-      <Accordion>
+      </Button> */}
+      {/* <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography variant="body1">Симуляция колеса на большом числе прокрутов</Typography>
         </AccordionSummary>
@@ -171,7 +168,7 @@ const DropoutWheelProof: FC = () => {
             </div>
           </div>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 };

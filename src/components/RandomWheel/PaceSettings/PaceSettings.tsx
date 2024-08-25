@@ -62,7 +62,7 @@ const PaceSettings: FC<PaceSettingsProps> = ({ paceConfig, setPaceConfig, spinTi
       {/*  /> */}
       {/* </div> */}
       <div className="wheel-controls-row">
-        <Typography className="wheel-controls-tip lg">Зона начала рандома</Typography>
+        <Typography className="wheel-controls-tip lg">Зона початку рандому</Typography>
         <Slider
           value={randomOffset}
           step={0.5}
@@ -77,9 +77,9 @@ const PaceSettings: FC<PaceSettingsProps> = ({ paceConfig, setPaceConfig, spinTi
           ]}
         />
       </div>
-      <Typography className="wheel-controls-tip hint">Время с конца, когда начнется докрут</Typography>
+      <Typography className="wheel-controls-tip hint">Час з кінця, коли почнеться докрут</Typography>
       <div className="wheel-controls-row">
-        <Typography className="wheel-controls-tip lg">Макс. дистанция</Typography>
+        <Typography className="wheel-controls-tip lg">Макс. дистанція</Typography>
         <Slider
           value={valueRandomZone}
           step={30}
@@ -94,7 +94,7 @@ const PaceSettings: FC<PaceSettingsProps> = ({ paceConfig, setPaceConfig, spinTi
           ]}
         />
       </div>
-      <Typography className="wheel-controls-tip lg">Заблокированная зона рандома</Typography>
+      <Typography className="wheel-controls-tip lg">Заблокована зона рандому</Typography>
       <Slider
         value={valueDisabledZone}
         step={0.01}
@@ -109,7 +109,7 @@ const PaceSettings: FC<PaceSettingsProps> = ({ paceConfig, setPaceConfig, spinTi
         ]}
       />
       <Typography className="wheel-controls-tip hint">
-        Чем больше значение, тем ближе к макс дистанции будет рандомится докрут.
+        Чим більше значення, тим ближче до макс дистанції буде рандомитись докрут.
       </Typography>
     </>
   );

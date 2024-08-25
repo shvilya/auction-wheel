@@ -349,7 +349,7 @@ const RandomWheel = <TWheelItem extends WheelItem>({
                 onChange={handleSpinTimeChange}
                 value={spinTime || ''}
               />
-              <Typography className="wheel-controls-tip">с.</Typography>
+              <Typography className="wheel-controls-tip">секунд</Typography>
             </div>
             {elements.mode && (
               <RadioButtonGroup
@@ -439,7 +439,7 @@ const RandomWheel = <TWheelItem extends WheelItem>({
             {elements.randomPace && (
               <>
                 <div className="wheel-controls-row">
-                  <Typography>Финал с перчинкой</Typography>
+                  <Typography>Фінал з перчинкою</Typography>
                   <Switch onChange={handleIsRandomPaceChange} />
                 </div>
                 {isRandomPace && (

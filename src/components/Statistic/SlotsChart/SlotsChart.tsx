@@ -69,7 +69,7 @@ const SlotsChart: FC<SlotsChartProps> = ({ slotsMap }) => {
           plugins: {
             title: {
               display: true,
-              text: 'Изменение суммы лота во времени',
+              text: 'Зміна суми лота в часі',
               font: {
                 size: 18,
               },

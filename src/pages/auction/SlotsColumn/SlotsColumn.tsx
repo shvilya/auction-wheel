@@ -71,7 +71,7 @@ const SlotsColumn: React.FC = () => {
           <SlotsList slots={filteredSlots} />
           <div className="slots-footer">
             <div className="total-sum-container">
-              {isTotalVisible && <Typography className="total-sum">{`Всего: ${totalSum} ₽`}</Typography>}
+              {isTotalVisible && <Typography className="total-sum">{`Всього: ${totalSum} ₴`}</Typography>}
               <IconButton onClick={toggleTotalSumVisability} className="hide-sum">
                 {isTotalVisible ? <VisibilityOffIcon /> : <VisibilityIcon />}
               </IconButton>

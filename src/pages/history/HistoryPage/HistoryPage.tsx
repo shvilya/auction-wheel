@@ -4,7 +4,7 @@ import PurchaseHistory from '../PurchaseHistory/PurchaseHistory';
 
 const HistoryPage: FC = () => {
   return (
-    <PageContainer title="История выполненных заказов">
+    <PageContainer title="Історія виконаних замовлень">
       <div style={{ width: '75%' }}>
         <PurchaseHistory />
       </div>

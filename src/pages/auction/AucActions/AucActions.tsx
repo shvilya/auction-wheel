@@ -86,14 +86,14 @@ const AucActions: React.FC = () => {
         >
           GitLab
         </Link>
-        <Link
+        {/* <Link
           target="_blank"
           rel="noopener noreferrer"
           className="da-link"
           href="https://www.donationalerts.com/r/kozjar"
         >
           {t('auc.supportCreator')}
-        </Link>
+        </Link> */}
         <IconButton onClick={handleResetSlots} className="clear-button" title="Очистить все">
           <DeleteSweepIcon />
         </IconButton>
