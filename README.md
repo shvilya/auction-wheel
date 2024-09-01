@@ -1,2 +1,16 @@
-# Web service for streamers with Twitch/DonationAlerts integration which offer multiple sorts of auctions in a convenient way
-## Link to the website - [pointauc](https://pointauc.ru/)
+1. якщо немає, то скачати та встановити Git:
+https://git-scm.com/download/win
+— "Standalone Installer" під свою версію системи
+— всі галочки можна обирати за замовчуванням
+
+2. якщо немає, то скачати та встановити NodeJS
+https://nodejs.org/uk
+— всі галочки можна обирати за замовчуванням
+
+3. ребут ОС
+
+4. в папці, в яку був скачаний проект з GitHub
+— відкрити термінал (напр. натиснути правою кнопкою та обрати Open in WIndows Terminal)
+— в терміналі написати "npm i" та натиснути ентер - запуститься інсталяція необхідних компонентів
+— в термналі написати "npm start" та натиснути ентер
+— дочекатися запуску - має автоматично відкритися сторінка браузера

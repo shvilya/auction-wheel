@@ -465,14 +465,14 @@ const RandomWheel = <TWheelItem extends WheelItem>({
             )}
             <div>{children}</div>
           </div>
-          <div className="settings" style={{ width: 325 }}>
+          {/* <div className="settings" style={{ width: 325 }}>
             <TwitchEmotesList setActiveEmote={handleEmoteChange} onEmotesLoad={handleEmotesLoad} />
             <ImageLinkInput
               buttonTitle={t('wheel.loadCustomMessage')}
               buttonClass="upload-wheel-image"
               onChange={handleEmoteChange}
             />
-          </div>
+          </div> */}
         </div>
         {wheelFormat === WheelFormat.BattleRoyal && (
           <ResizableBracket
